@@ -1,0 +1,255 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/_coordinator"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<com.google.android.material.appbar.AppBarLayout
+		android:id="@+id/_app_bar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/AppTheme.AppBarOverlay">
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/_toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="?attr/colorPrimary"
+			app:popupTheme="@style/AppTheme.PopupOverlay" />
+	</com.google.android.material.appbar.AppBarLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+		<LinearLayout
+			android:id="@+id/linear1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="#FFFFFF"
+			android:orientation="vertical"
+			android:layout_weight="1">
+			<LinearLayout
+				android:id="@+id/main_ui"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:orientation="vertical">
+				<TextView
+					android:id="@+id/textview1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Contact Us"
+					android:textSize="30sp"
+					android:textStyle="bold"
+					android:textColor="#FFFFFF"
+					android:layout_gravity="center_horizontal|center_vertical" />
+			</LinearLayout>
+			<ScrollView
+				android:id="@+id/vscroll2"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="1">
+				<LinearLayout
+					android:id="@+id/linear3"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:orientation="vertical">
+					<TextView
+						android:id="@+id/textview17"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Contact Us "
+						android:textSize="14sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview4"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Feel free to ask for details, don't save any questions!"
+						android:textSize="14sp"
+						android:textColor="#616161" />
+					<TextView
+						android:id="@+id/textview5"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Full Name"
+						android:textSize="14sp"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/edittext1"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#E3F2FD"
+						android:textSize="12sp"
+						android:textColor="#000000"
+						android:textColorHint="#607D8B" />
+					<TextView
+						android:id="@+id/textview6"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Email Address "
+						android:textSize="14sp"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/edittext2"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#E3F2FD"
+						android:textSize="12sp"
+						android:textColor="#000000"
+						android:textColorHint="#607D8B" />
+					<TextView
+						android:id="@+id/textview7"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Phone Number "
+						android:textSize="14sp"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/edittext3"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#E3F2FD"
+						android:textSize="12sp"
+						android:textColor="#000000"
+						android:textColorHint="#607D8B" />
+					<TextView
+						android:id="@+id/textview8"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Subject "
+						android:textSize="14sp"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/edittext4"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#E3F2FD"
+						android:textSize="12sp"
+						android:textColor="#000000"
+						android:textColorHint="#607D8B" />
+					<TextView
+						android:id="@+id/textview9"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Message "
+						android:textSize="14sp"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/edittext5"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#E3F2FD"
+						android:textSize="12sp"
+						android:textColor="#000000"
+						android:textColorHint="#607D8B" />
+					<Button
+						android:id="@+id/button1"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:padding="8dp"
+						android:background="#42A5F5"
+						android:text="Send Message"
+						android:textSize="14sp"
+						android:textStyle="bold"
+						android:textColor="#FFFFFF"
+						android:layout_gravity="center_horizontal|center_vertical" />
+					<TextView
+						android:id="@+id/textview10"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="20dp"
+						android:padding="8dp"
+						android:text="Our Office "
+						android:textSize="14sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview13"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Address :\nRegistered Office: 2nd Floor, Belvedere Court, Opposite Oval Maidan, 148 Maharshi Karve Road, Churchgate, Mumbai – 400020"
+						android:textSize="14sp"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview11"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Office: +912222029106\n\nSupport: +919820141328\n\nRegistrations: +919820141328\n\nCustomer Support: info\@inkc.in\n\nTechnical Support: support\@inkc.in"
+						android:textSize="14sp"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview14"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Other Details "
+						android:textSize="14sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview12"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Web Address: www.inkc.in"
+						android:textSize="14sp"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview16"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Business Hours"
+						android:textSize="14sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview15"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Monday - Friday - 9am to 5pm\n\nSaturday - 9am to 2pm\n\nSunday - Closed"
+						android:textSize="14sp"
+						android:textColor="#000000" />
+				</LinearLayout>
+			</ScrollView>
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/linear2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="horizontal">
+			<TextView
+				android:id="@+id/textview2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="Dog for a good life... A good life for a dog."
+				android:textSize="16sp"
+				android:textStyle="bold|italic"
+				android:textColor="#000000" />
+		</LinearLayout>
+	</LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

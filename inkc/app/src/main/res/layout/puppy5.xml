@@ -1,0 +1,580 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/_coordinator"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<com.google.android.material.appbar.AppBarLayout
+		android:id="@+id/_app_bar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/AppTheme.AppBarOverlay">
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/_toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="?attr/colorPrimary"
+			app:popupTheme="@style/AppTheme.PopupOverlay" />
+	</com.google.android.material.appbar.AppBarLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+		<ScrollView
+			android:id="@+id/vscroll1"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:padding="8dp"
+			android:background="#E3F2FD">
+			<LinearLayout
+				android:id="@+id/linear1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:orientation="vertical">
+				<TextView
+					android:id="@+id/textview2"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Litter Registration "
+					android:textSize="25sp"
+					android:textStyle="bold"
+					android:textColor="#2196F3"
+					android:layout_gravity="center_horizontal|center_vertical" />
+				<TextView
+					android:id="@+id/textview3"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Sire's INKC Register Number "
+					android:textSize="16sp"
+					android:textColor="#000000" />
+				<EditText
+					android:id="@+id/edittext1"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#E3F2FD"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:textColorHint="#607D8B" />
+				<TextView
+					android:id="@+id/textview4"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Dam's INKC Register Number "
+					android:textSize="16sp"
+					android:textColor="#000000" />
+				<EditText
+					android:id="@+id/edittext2"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#E3F2FD"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:textColorHint="#607D8B" />
+				<TextView
+					android:id="@+id/textview5"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Litter's Date of Birth "
+					android:textSize="16sp"
+					android:textColor="#000000" />
+				<LinearLayout
+					android:id="@+id/linear15"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:background="#E3F2FD"
+					android:gravity="center_vertical"
+					android:orientation="horizontal">
+					<EditText
+						android:id="@+id/edittext25"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:textSize="12sp"
+						android:textColor="#000000"
+						android:hint="dd/mm/yyyy"
+						android:textColorHint="#607D8B" />
+					<ImageView
+						android:id="@+id/imageview1"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="20dp"
+						android:src="@drawable/ic_today_black"
+						android:scaleType="center" />
+				</LinearLayout>
+				<CalendarView
+					android:id="@+id/calendarview1"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp" />
+				<TextView
+					android:id="@+id/textview6"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Upload Litter's Photographs with Mother "
+					android:textSize="16sp"
+					android:textColor="#000000" />
+				<Button
+					android:id="@+id/button1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Choose photo "
+					android:textSize="12sp"
+					android:textColor="#000000" />
+				<TextView
+					android:id="@+id/textview7"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Microchip Required "
+					android:textSize="16sp"
+					android:textColor="#000000" />
+				<LinearLayout
+					android:id="@+id/linear2"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:orientation="horizontal">
+					<RadioButton
+						android:id="@+id/radiobutton1"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Yes I require "
+						android:textSize="14sp"
+						android:textColor="#000000" />
+					<RadioButton
+						android:id="@+id/radiobutton2"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="No I don't require "
+						android:textSize="14sp"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<TextView
+					android:id="@+id/textview8"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Kennel Name "
+					android:textSize="16sp"
+					android:textColor="#000000" />
+				<LinearLayout
+					android:id="@+id/linear3"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:orientation="horizontal">
+					<RadioButton
+						android:id="@+id/radiobutton3"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Prefix "
+						android:textSize="14sp"
+						android:textColor="#000000" />
+					<RadioButton
+						android:id="@+id/radiobutton4"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Suffix "
+						android:textSize="14sp"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<TextView
+					android:id="@+id/textview9"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="puppy Number 1"
+					android:textSize="16sp"
+					android:textStyle="bold"
+					android:textColor="#D81B60" />
+				<TextView
+					android:id="@+id/textview10"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Name of Puppy "
+					android:textSize="16sp"
+					android:textColor="#000000" />
+				<EditText
+					android:id="@+id/edittext4"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#E3F2FD"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:textColorHint="#607D8B" />
+				<TextView
+					android:id="@+id/textview19"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Gender "
+					android:textSize="16sp"
+					android:textColor="#000000" />
+				<LinearLayout
+					android:id="@+id/linear4"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:orientation="horizontal">
+					<RadioButton
+						android:id="@+id/radiobutton5"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Male "
+						android:textSize="14sp"
+						android:textColor="#000000" />
+					<RadioButton
+						android:id="@+id/radiobutton6"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Female "
+						android:textSize="14sp"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<TextView
+					android:id="@+id/textview26"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Color &amp; Marking "
+					android:textSize="16sp"
+					android:textColor="#000000" />
+				<EditText
+					android:id="@+id/edittext5"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#E3F2FD"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:textColorHint="#607D8B" />
+				<TextView
+					android:id="@+id/textview41"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Puppy Number 2"
+					android:textSize="16sp"
+					android:textStyle="bold"
+					android:textColor="#EC407A" />
+				<TextView
+					android:id="@+id/textview40"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Name of Puppy "
+					android:textSize="16sp"
+					android:textColor="#000000" />
+				<EditText
+					android:id="@+id/edittext6"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#E3F2FD"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:textColorHint="#607D8B" />
+				<TextView
+					android:id="@+id/textview39"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Gender "
+					android:textSize="16sp"
+					android:textColor="#000000" />
+				<LinearLayout
+					android:id="@+id/linear6"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:orientation="horizontal">
+					<RadioButton
+						android:id="@+id/radiobutton23"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Male "
+						android:textSize="14sp"
+						android:textColor="#000000" />
+					<RadioButton
+						android:id="@+id/radiobutton24"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Female "
+						android:textSize="14sp"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<TextView
+					android:id="@+id/textview38"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Color &amp; Marking "
+					android:textSize="16sp"
+					android:textColor="#000000" />
+				<EditText
+					android:id="@+id/edittext7"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#E3F2FD"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:textColorHint="#607D8B" />
+				<TextView
+					android:id="@+id/textview37"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Puppy Number 3"
+					android:textSize="16sp"
+					android:textStyle="bold"
+					android:textColor="#D81B60" />
+				<TextView
+					android:id="@+id/textview32"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Name of Puppy "
+					android:textSize="16sp"
+					android:textColor="#000000" />
+				<EditText
+					android:id="@+id/edittext8"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#E3F2FD"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:textColorHint="#607D8B" />
+				<TextView
+					android:id="@+id/textview36"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Gender "
+					android:textSize="16sp"
+					android:textColor="#000000" />
+				<LinearLayout
+					android:id="@+id/linear5"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:orientation="horizontal">
+					<RadioButton
+						android:id="@+id/radiobutton21"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Male"
+						android:textSize="14sp"
+						android:textColor="#000000" />
+					<RadioButton
+						android:id="@+id/radiobutton22"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Female "
+						android:textSize="14sp"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<TextView
+					android:id="@+id/textview35"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Color &amp; Marking "
+					android:textSize="16sp"
+					android:textColor="#000000" />
+				<EditText
+					android:id="@+id/edittext9"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#E3F2FD"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:textColorHint="#607D8B" />
+				<TextView
+					android:id="@+id/textview34"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Puppy Number 4"
+					android:textSize="16sp"
+					android:textStyle="bold"
+					android:textColor="#D81B60" />
+				<TextView
+					android:id="@+id/textview33"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Name of Puppy "
+					android:textSize="16sp"
+					android:textColor="#000000" />
+				<EditText
+					android:id="@+id/edittext15"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#E3F2FD"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:textColorHint="#607D8B" />
+				<TextView
+					android:id="@+id/textview31"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Gender "
+					android:textSize="16sp"
+					android:textColor="#000000" />
+				<LinearLayout
+					android:id="@+id/linear7"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:orientation="horizontal">
+					<RadioButton
+						android:id="@+id/radiobutton19"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Male "
+						android:textSize="14sp"
+						android:textColor="#000000" />
+					<RadioButton
+						android:id="@+id/radiobutton20"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Female "
+						android:textSize="14sp"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<TextView
+					android:id="@+id/textview30"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Color &amp; Marking "
+					android:textSize="16sp"
+					android:textColor="#000000" />
+				<EditText
+					android:id="@+id/edittext14"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#E3F2FD"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:textColorHint="#607D8B" />
+				<TextView
+					android:id="@+id/textview29"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Puppy Number 5"
+					android:textSize="16sp"
+					android:textStyle="bold"
+					android:textColor="#D81B60" />
+				<TextView
+					android:id="@+id/textview28"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Name of Puppy "
+					android:textSize="16sp"
+					android:textColor="#000000" />
+				<EditText
+					android:id="@+id/edittext13"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#E3F2FD"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:textColorHint="#607D8B" />
+				<TextView
+					android:id="@+id/textview25"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Gender "
+					android:textSize="16sp"
+					android:textColor="#000000" />
+				<LinearLayout
+					android:id="@+id/linear8"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:orientation="horizontal">
+					<RadioButton
+						android:id="@+id/radiobutton17"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Male "
+						android:textSize="14sp"
+						android:textColor="#000000" />
+					<RadioButton
+						android:id="@+id/radiobutton18"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Female "
+						android:textSize="14sp"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<TextView
+					android:id="@+id/textview27"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Color &amp; Marking "
+					android:textSize="16sp"
+					android:textColor="#000000" />
+				<EditText
+					android:id="@+id/edittext12"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#E3F2FD"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:textColorHint="#607D8B" />
+				<Button
+					android:id="@+id/button2"
+					android:layout_width="100dp"
+					android:layout_height="60dp"
+					android:layout_marginTop="10dp"
+					android:padding="8dp"
+					android:text="Submit"
+					android:textSize="16sp"
+					android:textStyle="bold"
+					android:textColor="#FFFFFF"
+					android:layout_gravity="center_horizontal|center_vertical" />
+			</LinearLayout>
+		</ScrollView>
+	</LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
