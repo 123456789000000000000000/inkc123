@@ -47,6 +47,8 @@ import java.util.Calendar;
 import java.util.regex.*;
 import org.json.*;
 
+//hello
+
 public class LitterActivity extends AppCompatActivity {
 	
 	public final int REQ_CD_IMGFILE = 101;
@@ -292,4 +294,4 @@ public class LitterActivity extends AppCompatActivity {
 	public int getDisplayHeightPixels() {
 		return getResources().getDisplayMetrics().heightPixels;
 	}
-}
+}
