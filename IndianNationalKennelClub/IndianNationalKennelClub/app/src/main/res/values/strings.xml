@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Indian National Kennel Club</string>
+
+    <string name="pref_file_key">pref_file_key</string>
+    <string name="pref_is_user_login">isuserlogin</string>
+    <string name="pref_name_of_user">nameofuser</string>
+
+    <string name="image">image</string>
+    <string name="name">name</string>
+    <string name="address">address</string>
+    <string name="contact">contact</string>
+    <string name="inkcregister">inkcreg</string>
+    <string name="membership">membershp</string>
+    <string name="user_token">user_token</string>
+    <string name="user_id">user_id</string>
+
+    <string name="pet_id">pet_id</string>
+
+</resources>
